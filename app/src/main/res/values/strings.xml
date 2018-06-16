@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+    <string name="ratingTXT">0.0</string>
+    <string name="titleTXT" >Title</string>
+    <string name="releaseDateTXT">2018–01-01</string>
+    <string name="plotTXT">Plot Synopsis</string>
+    <string name="menu_popularMovies">Popular Movies</string>
+    <string name="menu_highestRate">Top Rated Movies</string>
+    <string name="description_poster">Poster/Thumbnail do Filme</string>
+    <string name="menu_favoriteMovies">Favorite Movies</string>
+
+</resources>
