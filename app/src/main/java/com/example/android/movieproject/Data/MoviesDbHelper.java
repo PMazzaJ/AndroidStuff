@@ -46,66 +46,7 @@ public class MoviesDbHelper extends SQLiteOpenHelper{
 
 
 
-    /*
-    public void AddFavorite(Filme filme){
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues cv = new ContentValues();
-        cv.put(MoviesContract.MoviesEntry.COLUMN_MOVIE_ID, filme.getId());
-        cv.put(MoviesContract.MoviesEntry.COLUMN_TITLE, filme.getOriginalTitle());
-        cv.put(MoviesContract.MoviesEntry.COLUMN_POSTER_PATH, filme.getPosterPath());
-        cv.put(MoviesContract.MoviesEntry.COLUMN_RATING, filme.getVoteAverage());
-        cv.put(MoviesContract.MoviesEntry.COLUMN_RELEASE_DATE, filme.getReleaseDate());
-        cv.put(MoviesContract.MoviesEntry.COLUMN_SYNOPSIS, filme.getOverview());
-
-        db.insert(MoviesContract.MoviesEntry.TABLE_NAME, null, cv);
-        db.close();
-    }
-
-    public void DeleteFavorite(int id){
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(MoviesContract.MoviesEntry.TABLE_NAME, MoviesContract.MoviesEntry.COLUMN_MOVIE_ID + "=" + id, null);
-
-    }
-
-    public List<Filme> getAllFavorite(){
-        String[] columns = {
-                MoviesContract.MoviesEntry._ID,
-                MoviesContract.MoviesEntry.COLUMN_MOVIE_ID,
-                MoviesContract.MoviesEntry.COLUMN_TITLE,
-                MoviesContract.MoviesEntry.COLUMN_POSTER_PATH,
-                MoviesContract.MoviesEntry.COLUMN_RATING,
-                MoviesContract.MoviesEntry.COLUMN_RELEASE_DATE,
-                MoviesContract.MoviesEntry.COLUMN_SYNOPSIS
-        };
-
-
-
-        List<Filme> favoriteList = new ArrayList<>();
-        SQLiteDatabase db =getReadableDatabase();
-
-        Cursor cursor = db.query(MoviesContract.MoviesEntry.TABLE_NAME, columns, null, null, null, null, null);
-
-        if(cursor.moveToFirst()) {
-            do{
-                Filme filme = new Filme();
-                filme.setId(Integer.parseInt(cursor.getString(cursor.getColumnIndex(MoviesContract.MoviesEntry.COLUMN_MOVIE_ID))));
-                filme.setOriginalTitle(cursor.getString(cursor.getColumnIndex(MoviesContract.MoviesEntry.COLUMN_TITLE)));
-                filme.setPosterPath(cursor.getString(cursor.getColumnIndex(MoviesContract.MoviesEntry.COLUMN_POSTER_PATH)));
-                filme.setVoteAverage(Double.parseDouble(cursor.getString(cursor.getColumnIndex(MoviesContract.MoviesEntry.COLUMN_RATING))));
-                filme.setReleaseDate(cursor.getString(cursor.getColumnIndex(MoviesContract.MoviesEntry.COLUMN_RELEASE_DATE)));
-                filme.setOverview(cursor.getString(cursor.getColumnIndex(MoviesContract.MoviesEntry.COLUMN_SYNOPSIS)));
-
-                favoriteList.add(filme);
-
-            }while (cursor.moveToNext());
-
-        }
-
-        cursor.close();
-        db.close();
-
-    */
+ 
 
 
 
