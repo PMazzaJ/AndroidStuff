@@ -31,8 +31,6 @@ import java.util.Objects;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-// image source: https://www.themoviedb.org/about/logos-attribution
-// Insert your API key -> gradle.properties DB_API_Key ="api_key"
 
 
 public class MainActivity extends AppCompatActivity{
